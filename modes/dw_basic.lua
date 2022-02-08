@@ -96,11 +96,12 @@ local spec = {
 	sync = {
 		[0x00BA] = {}, --exp lower bits
 		[0x00BB] = {}, --exp upper bits
-        [0x00BC] = {}, --gold lower bits, no message since usually updates with exp
-        [0x00BD] = {}, --gold upper bits
-        [0x00BE] = {name="new gear"},
-        [0x00BF] = {name="keys", kind="delta", verb="changed" },
-       -- [0x00C0] = {name="Herbs", kind="delta", verb="changed" },
+		[0x00BC] = {}, --gold lower bits, no message since usually updates with exp
+		[0x00BD] = {}, --gold upper bits
+		[0x00BE] = {name="new gear"},
+		[0x00BF] = {name="keys", kind="delta", verb="changed" },
+	       -- [0x00C0] = {name="Herbs", kind="delta", verb="changed" },
+		[0x00C6] = {}, --mp (BETA feature, will do weird stuff with different MP builds)
 	},
 	tick = function() if items_to_skip > 0 then items_to_skip = items_to_skip - 1 end return end
 }
