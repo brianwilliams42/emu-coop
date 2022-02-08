@@ -88,7 +88,7 @@ function printChangedItemMessage(value, previousValue)
 end
 
 local spec = {
-	guid = "45aed033-e9ab-3a25-a5b7-b75735c7876e",
+	guid = "45aed033-e9ab-3a25-a5b7-b74235c7876e",
 	format = "1.1",
 	name = "Dragon Warrior Randomizer",
 	match = {"stringtest", addr=0xFFE0, value="DRAGON WARRIOR"},
