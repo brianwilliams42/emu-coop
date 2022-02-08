@@ -5,7 +5,7 @@ if not BNOT then
 	BNOT = bit.bnot
 end
 
-local cache = {}
+cache = {}
 local cacheSize = {}
 
 function memoryRead(addr, size)
