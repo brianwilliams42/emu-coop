@@ -8,4 +8,6 @@ modes = {
 	require "modes.tloz_all",
 	require "modes.tloz_progress",
 	require "modes.tloz_basic",
+	require "modes.dw_basic",
+	require "modes.z2",
 }
