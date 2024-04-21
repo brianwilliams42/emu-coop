@@ -11,6 +11,7 @@ local bit = require("bit")
 lastDroppedItem = 0
 onchest = 0
 items_to_skip = 0
+still_running = true
 
 function getItem(slotbyte, top)
   if top then
@@ -110,9 +111,10 @@ local spec = {
  spec.running =
   function(value, size) 
     if AND(0x04, memoryRead(0x00E4)) == 1 and 4 == memoryRead(0x0045) then
+      still_running = false
       return false
     else 
-	  return true
+      return still_running
     end
   end
 
